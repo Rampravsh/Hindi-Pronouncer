@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Hindi Pronouncer",
+  "version": "1.0",
+  "permissions": ["contextMenus", "tts"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
